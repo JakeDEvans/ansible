@@ -466,7 +466,7 @@ def get_vrr_status(group, module, interface):
 
 
 def get_existing_vrrp(interface, group, module, name):
-    command = 'show vrrp detail interface {0}'.format(interface)
+    command = 'show vrrp detail {0}'.format(interface)
     body = execute_show_command(command, module)
     vrrp = {}
 
